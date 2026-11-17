@@ -47,3 +47,34 @@ export const links = {
   linkedin: "https://www.linkedin.com/in/abdul-hayee1",
   portfolio: "https://abdulhayee.vercel.app",
 };
+export const websites = [
+  { name: "vcreative.net", url: "https://vcreative.net" },
+  { name: "vofspace.com", url: "https://vofspace.com" },
+  { name: "fundmydeductible.com", url: "https://fundmydeductible.com" },
+  { name: "maderaresidential.com", url: "https://maderaresidential.com" },
+  { name: "thecobuilders.com", url: "https://thecobuilders.com" },
+  { name: "dotlogics.com", url: "https://dotlogics.com" },
+  { name: "waybase.com", url: "https://waybase.com" },
+];
+
+export const currently = [
+  "Running the technical side of an industrial components e-commerce site on WordPress and WooCommerce: custom themes and plugins, checkout and payment flows, performance and SEO.",
+  "Building small AI tools: chatbots, retrieval-augmented (RAG) assistants and MCP servers.",
+  "Shipping React, TanStack and Supabase apps such as timesheets and point-of-sale tools.",
+];
+
+export const workStyle = [
+  "Practical first: I build things that run in production and that people actually use.",
+  "Comfortable across the stack, from PHP and WordPress themes to React, TypeScript and Supabase.",
+  "I care about performance, SEO and clean checkout flows on e-commerce sites.",
+  "I document and test what I ship, and keep source public where I can.",
+];
+
+export const faq = [
+  { q: "What kind of work does Abdul do?", a: "E-commerce and WordPress/WooCommerce development, React front ends, and small AI tools such as chatbots, RAG assistants and MCP servers." },
+  { q: "What is Abdul's strongest area?", a: "WordPress and WooCommerce: custom themes and plugins, large catalogues (50,000+ products), checkout flows, performance and SEO." },
+  { q: "Does Abdul work with AI?", a: "Yes. He has built a WordPress AI chatbot plugin and a RAG-based chatbot, and this very MCP server." },
+  { q: "Where is Abdul based?", a: "Manchester, UK." },
+  { q: "How can I see Abdul's code?", a: "On GitHub at github.com/abdulhayeedev. The source of this MCP server is at github.com/abdulhayeedev/abdul-mcp." },
+  { q: "How do I connect to this MCP server?", a: "Add https://abdulhayee.vercel.app/api/mcp as a custom connector in Claude, an MCP server in ChatGPT developer mode, or a streamable-HTTP server in Cursor. No login is needed." },
+];
