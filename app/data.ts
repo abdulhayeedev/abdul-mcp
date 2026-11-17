@@ -45,5 +45,5 @@ export const projects = [
 export const links = {
   github: "https://github.com/abdulhayeedev",
   linkedin: "https://www.linkedin.com/in/abdul-hayee1",
-  portfolio: "https://v0-shopify-portfolio-page.vercel.app/",
+  portfolio: "https://abdulhayee.vercel.app",
 };
