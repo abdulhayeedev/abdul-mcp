@@ -1,4 +1,15 @@
-export const metadata = { title: "Abdul Hayee MCP", description: "MCP server for Abdul Hayee's profile" };
+import "./globals.css";
+
+export const metadata = {
+  title: "Abdul Hayee | Personal MCP server",
+  description:
+    "A personal MCP server. Connect it to Claude, ChatGPT or Cursor and ask about Abdul Hayee's experience, skills and projects.",
+};
+
 export default function RootLayout({ children }: { children: React.ReactNode }) {
-  return (<html lang="en"><body style={{ fontFamily: "system-ui", background: "#0d1b24", color: "#e6f1f5", padding: "48px" }}>{children}</body></html>);
+  return (
+    <html lang="en">
+      <body>{children}</body>
+    </html>
+  );
 }
