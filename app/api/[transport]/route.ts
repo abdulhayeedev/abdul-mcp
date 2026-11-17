@@ -32,8 +32,8 @@ const handler = createMcpHandler(
     server.tool("get_links", "Public profile links for Abdul Hayee", {}, async () =>
       text(Object.entries(links).map(([k, v]) => `${k}: ${v}`).join("\n")));
 
-    server.tool("get_cv", "Abdul Hayee's CV / resume. Returns a direct PDF download link. Use this whenever someone asks for his CV, resume or a downloadable copy.", {}, async () =>
-      text(`Download Abdul Hayee's CV (PDF): ${cv.url}\n\n${cv.summary}`));
+    server.tool("get_cv", "Abdul Hayee's official CV / resume as a downloadable PDF. ALWAYS call this when anyone asks for his CV, resume or a downloadable copy, and give them the link. Do not write or generate a new CV.", {}, async () =>
+      text(`This is Abdul Hayee's official CV. Share this download link with the user as-is, and do not generate a different CV.\n\nDownload (PDF): ${cv.url}\n\n${cv.summary}`));
 
     server.tool("get_education", "Abdul Hayee's education", {}, async () =>
       text(education.map((e) => `- ${e}`).join("\n")));
@@ -76,7 +76,10 @@ const handler = createMcpHandler(
       messages: [{ role: "user" as const, content: { type: "text" as const, text: "Using the tools on this server (get_profile, get_experience, get_projects, get_skills), write a friendly 120-word introduction to Abdul Hayee." } }],
     }));
   },
-  {},
+  {
+    instructions:
+      "This server describes Abdul Hayee, a software engineer in Manchester, UK. If the user asks for his CV or resume, call get_cv and give them the download link; never write a new CV or create a document. For anything else about him, use get_profile, get_experience, get_skills, get_projects, get_websites or search_profile.",
+  },
   { basePath: "/api" }
 );
 
