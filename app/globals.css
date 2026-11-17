@@ -152,3 +152,6 @@ footer .inner{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px
 #work .chips a.chip[href*="myeq"]::before{background-image:url(/site-myeq.jpg)}
 #work .chips a.chip[href*="chipsa"]::before{background-image:url(/site-chipsa.jpg)}
 #work .chips a.chip[href*="active-hop"]::before{background-image:linear-gradient(135deg,rgba(0,255,65,.08),rgba(0,0,0,.6)),repeating-linear-gradient(0deg,rgba(134,239,172,.07) 0 1px,transparent 1px 22px),repeating-linear-gradient(90deg,rgba(134,239,172,.07) 0 1px,transparent 1px 22px)}
+
+/* cookie chips */
+#work .chips a.chip[href*="cookiechips"]::before{background-image:url(/site-cookiechips.jpg)}
