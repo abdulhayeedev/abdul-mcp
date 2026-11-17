@@ -140,8 +140,8 @@ export default function Home() {
               <h1 className="reveal">I build stores, plugins and AI tools that run in production.</h1>
               <p className="tag reveal">I build <Rotator /></p>
               <p className="lead reveal">
-                Software engineer in Manchester. I work on WooCommerce stores, custom WordPress plugins
-                and small AI tools, from the first line of code to a live site.
+                Software engineer in Manchester. I do it all: e-commerce stores, WordPress themes and plugins,
+                React web apps, POS systems, AI agents and MCP servers, from the first design to a live site.
               </p>
               <div className="cta reveal">
                 <a className="btn solid" href="#work">See my work</a>
