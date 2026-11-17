@@ -2,6 +2,7 @@ import Scene from "./Scene";
 import CopyButton from "./CopyButton";
 import Reveal from "./Reveal";
 import Rotator from "./Rotator";
+import { websites } from "./data";
 
 const SITE = "https://abdulhayee.vercel.app";
 const MCP_URL = SITE + "/api/mcp";
@@ -59,16 +60,6 @@ const projects = [
     text: "React and TanStack front ends for small business clients, from layout to launch.",
     tags: ["React", "TanStack", "Tailwind"],
   },
-];
-
-const sites = [
-  ["vcreative.net", "https://vcreative.net"],
-  ["vofspace.com", "https://vofspace.com"],
-  ["fundmydeductible.com", "https://fundmydeductible.com"],
-  ["maderaresidential.com", "https://maderaresidential.com"],
-  ["thecobuilders.com", "https://thecobuilders.com"],
-  ["dotlogics.com", "https://dotlogics.com"],
-  ["waybase.com", "https://waybase.com"],
 ];
 
 const jobs = [
@@ -200,8 +191,8 @@ export default function Home() {
               </div>
               <div className="eyebrow reveal" style={{ marginTop: 48 }}>Websites I&apos;ve worked on</div>
               <div className="chips reveal">
-                {sites.map(([label, href]) => (
-                  <a className="chip" href={href} key={href}>{label}</a>
+                {websites.map((w) => (
+                  <a className="chip" href={w.url} key={w.url}>{w.name}</a>
                 ))}
               </div>
             </div>
