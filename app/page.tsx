@@ -1,22 +1,104 @@
 import Scene from "./Scene";
 import CopyButton from "./CopyButton";
+import Reveal from "./Reveal";
 
-const MCP_URL = "https://abdul-mcp.vercel.app/api/mcp";
+const SITE = "https://abdulhayee.vercel.app";
+const MCP_URL = SITE + "/api/mcp";
+
+const ticker = [
+  "Software engineer / Manchester, UK",
+  "WordPress + WooCommerce",
+  "AI agents + RAG",
+  "React + TypeScript",
+  "Agent-ready / connect via MCP",
+];
+
+const stats = [
+  ["50,000+", "products in one WooCommerce store"],
+  ["6+", "years building for the web"],
+  ["5", "live MCP tools you can call"],
+  ["2", "computer science degrees"],
+];
+
+const projects = [
+  {
+    n: "01",
+    name: "WooCommerce store",
+    text: "A store with more than 50,000 products, with a custom theme and custom plugins built around the catalogue.",
+    tags: ["WooCommerce", "PHP", "Custom theme"],
+  },
+  {
+    n: "02",
+    name: "WordPress AI chatbot",
+    text: "A chatbot plugin for WordPress that answers customer questions directly on the site.",
+    tags: ["WordPress", "PHP", "LLM"],
+  },
+  {
+    n: "03",
+    name: "Rag-based-Chatbot",
+    text: "A retrieval-augmented chatbot that answers from your own documents instead of guessing.",
+    tags: ["Python", "RAG", "AI"],
+    href: "https://github.com/abdulhayeedev/Rag-based-Chatbot",
+  },
+  {
+    n: "04",
+    name: "Timesheet app",
+    text: "Check-in and check-out tracking on Supabase, with row-level security so each person only sees what they should.",
+    tags: ["Supabase", "PostgreSQL", "Vercel"],
+  },
+  {
+    n: "05",
+    name: "POS systems",
+    text: "Browser-based point-of-sale tools for small businesses, built for fast day-to-day use.",
+    tags: ["React", "Supabase", "TypeScript"],
+  },
+  {
+    n: "06",
+    name: "Client websites",
+    text: "React and TanStack front ends for small business clients, from layout to launch.",
+    tags: ["React", "TanStack", "Tailwind"],
+  },
+];
+
+const sites = [
+  ["vcreative.net", "https://vcreative.net"],
+  ["vofspace.com", "https://vofspace.com"],
+  ["fundmydeductible.com", "https://fundmydeductible.com"],
+  ["maderaresidential.com", "https://maderaresidential.com"],
+  ["thecobuilders.com", "https://thecobuilders.com"],
+  ["dotlogics.com", "https://dotlogics.com"],
+  ["waybase.com", "https://waybase.com"],
+];
+
+const jobs = [
+  ["2025 - present", "Ecommerce Web Developer", "Arrow Engineering Components, Manchester", "Runs the technical stack of an industrial components e-commerce site on WordPress and WooCommerce: custom themes and plugins, payment and checkout flows, performance and SEO."],
+  ["2024 - 2025", "Software Engineer", "VulcanTech UK", "Python and Flask web applications, REST APIs and back-end services, with responsive front ends."],
+  ["2023 - 2024", "IT Support Engineer", "Techlio Pvt", "Hardware, software and network support, plus installing and maintaining systems."],
+  ["2021 - 2023", "Business Development Executive", "Gigalabs Ltd", "Lead generation, digital outreach and CRM-based relationship management."],
+];
+
+const skills = [
+  ["Languages", ["PHP", "JavaScript", "TypeScript", "Python", "HTML / CSS"]],
+  ["Frameworks", ["React", "Next.js", "TanStack", "Flask", "Tailwind", "Bootstrap"]],
+  ["Ecommerce / CMS", ["WordPress", "WooCommerce", "Shopify", "Elementor"]],
+  ["Backend / data", ["Supabase", "PostgreSQL", "MySQL", "REST APIs", "GraphQL"]],
+  ["AI", ["LLM integration", "RAG", "AI agents", "MCP servers"]],
+  ["Tools", ["Git", "GitHub", "Docker", "Vercel", "Figma"]],
+];
 
 const tools = [
   ["get_profile", "Who I am, my headline and education."],
   ["get_experience", "My work history, newest first."],
   ["get_skills", "Languages, frameworks, e-commerce, backend and AI skills."],
-  ["get_projects", "Selected projects. Optional keyword filter, e.g. \"ai\" or \"woocommerce\"."],
+  ["get_projects", "Selected projects, with an optional keyword filter."],
   ["get_links", "GitHub, LinkedIn and portfolio links."],
 ];
 
-const asks = [
-  "What has Abdul built?",
-  "Does he have WooCommerce experience?",
-  "What AI projects has he worked on?",
-  "Summarise his work history.",
-  "Which languages and frameworks does he use?",
+const faq = [
+  ["What do you build?", "Online stores, WordPress and WooCommerce plugins, React front ends and small AI tools. Mostly practical things that run in production."],
+  ["Where are you based?", "Manchester, UK."],
+  ["What is the MCP server on this site?", "A small read-only server. Connect it to Claude, ChatGPT or Cursor and the assistant can answer questions about my experience, skills and projects from my real details. It can't read or change anything on your accounts."],
+  ["Is the MCP server safe to connect?", "Yes. It only returns fixed information about me, needs no login and doesn't store what you ask."],
 ];
 
 export default function Home() {
@@ -24,109 +106,229 @@ export default function Home() {
     <>
       <Scene />
       <div className="veil" />
-      <main className="page">
-        <div className="top">
-          <span>abdulhayeedev / abdul-mcp</span>
-          <a href="https://github.com/abdulhayeedev/abdul-mcp">source on github</a>
+      <Reveal />
+      <div className="wrap">
+        <div className="ticker" aria-hidden="true">
+          <div className="track">
+            {[0, 1].map((k) => (
+              <span key={k}>
+                {ticker.map((t) => (
+                  <span key={t + k}>{t} <span>+</span></span>
+                ))}
+              </span>
+            ))}
+          </div>
         </div>
 
-        <header className="hero">
-          <div className="eyebrow">Model Context Protocol server</div>
-          <h1>Ask my profile.</h1>
-          <p className="lead">
-            I&apos;m Abdul Hayee, a software engineer in Manchester. Connect this server to your AI
-            assistant and ask about my experience, skills and projects. It answers from my real details.
-          </p>
-          <div className="urlbox">
-            <code>{MCP_URL}</code>
-            <CopyButton text={MCP_URL} />
+        <header className="header">
+          <div className="inner">
+            <a className="logo" href="#top">abdulhayee</a>
+            <nav className="nav">
+              <a href="#work">Work</a>
+              <a href="#experience">Experience</a>
+              <a href="#skills">Skills</a>
+              <a href="#contact">Contact</a>
+              <a className="mcp" href="#mcp">MCP</a>
+            </nav>
           </div>
-          <p className="note">Streamable HTTP. Read-only. No login needed.</p>
         </header>
 
-        <section>
-          <h2>How to connect</h2>
-          <div className="grid3">
-            <div className="card">
-              <div className="n">01</div>
-              <h3>Claude</h3>
-              <ol>
-                <li>Open Settings, then Connectors.</li>
-                <li>Click Add custom connector.</li>
-                <li>Name it abdulhayee and paste the URL above.</li>
-                <li>Ask: &quot;What has Abdul built?&quot;</li>
-              </ol>
-            </div>
-            <div className="card">
-              <div className="n">02</div>
-              <h3>ChatGPT</h3>
-              <ol>
-                <li>Open Settings, then Apps &amp; Connectors.</li>
-                <li>Turn on developer mode and click Create.</li>
-                <li>Paste the URL and save.</li>
-                <li>Ask it to call get_profile.</li>
-              </ol>
-            </div>
-            <div className="card">
-              <div className="n">03</div>
-              <h3>Cursor or any client</h3>
-              <ol>
-                <li>Add a streamable-HTTP MCP server.</li>
-                <li>Paste the URL above.</li>
-                <li>Run tools/list to see the five tools.</li>
-              </ol>
-            </div>
-          </div>
-        </section>
-
-        <section>
-          <h2>Tools</h2>
-          <div className="tools">
-            {tools.map(([name, desc]) => (
-              <div className="tool" key={name}>
-                <code>{name}</code>
-                <span>{desc}</span>
+        <main id="top">
+          <section className="hero">
+            <div className="inner">
+              <p className="hello reveal">Hello, I&apos;m <b>Abdul Hayee</b></p>
+              <h1 className="reveal">I build stores, plugins and AI tools that run in production.</h1>
+              <p className="tag reveal">I build <em>ecommerce</em> / <em>wordpress</em> / <em>ai agents</em></p>
+              <p className="lead reveal">
+                Software engineer in Manchester. I work on WooCommerce stores, custom WordPress plugins
+                and small AI tools, from the first line of code to a live site.
+              </p>
+              <div className="cta reveal">
+                <a className="btn solid" href="#work">See my work</a>
+                <a className="btn" href="#mcp">Ask my profile</a>
+                <a className="badge" href="#mcp"><span className="dot" />AGENT-READY / connect via MCP</a>
               </div>
-            ))}
-          </div>
-        </section>
-
-        <section>
-          <h2>Try asking</h2>
-          <div className="chips">
-            {asks.map((a) => (
-              <div className="chip" key={a}>{a}</div>
-            ))}
-          </div>
-        </section>
-
-        <section>
-          <h2>About</h2>
-          <div className="about">
-            <div>
-              <p>
-                I build online stores, WordPress and WooCommerce plugins and small AI tools. Most of my
-                work is practical: things that run in production and that people actually use.
-              </p>
-              <p>
-                This server is a small project in the same spirit. It returns fixed information about me,
-                it can&apos;t read or change anything on your accounts, and it doesn&apos;t store what you ask.
-              </p>
-              <div className="stack">Next.js / TypeScript / mcp-handler / Three.js / Vercel</div>
             </div>
-            <div className="links">
-              <a href="https://github.com/abdulhayeedev">GitHub <span>abdulhayeedev</span></a>
-              <a href="https://www.linkedin.com/in/abdul-hayee1">LinkedIn <span>abdul-hayee1</span></a>
-              <a href="https://v0-shopify-portfolio-page.vercel.app/">Portfolio <span>view</span></a>
+          </section>
+
+          <section className="s">
+            <div className="inner">
+              <div className="eyebrow reveal">By the numbers</div>
+              <h2 className="reveal">Shipped, measured.</h2>
+              <div className="grid g4">
+                {stats.map(([b, t]) => (
+                  <div className="card stat reveal" key={t}>
+                    <b>{b}</b>
+                    <span>{t}</span>
+                  </div>
+                ))}
+              </div>
             </div>
-          </div>
-        </section>
+          </section>
+
+          <section className="s" id="work">
+            <div className="inner">
+              <div className="eyebrow reveal">Selected work</div>
+              <h2 className="reveal">Things I&apos;ve built and shipped.</h2>
+              <div className="grid g3">
+                {projects.map((p) => {
+                  const body = (
+                    <>
+                      <div className="n">{p.n}</div>
+                      <h3>{p.name}</h3>
+                      <p>{p.text}</p>
+                      <div className="meta">
+                        {p.tags.map((t) => (<span className="chip" key={t}>{t}</span>))}
+                      </div>
+                    </>
+                  );
+                  return p.href ? (
+                    <a className="card reveal" href={p.href} key={p.name}>{body}</a>
+                  ) : (
+                    <div className="card reveal" key={p.name}>{body}</div>
+                  );
+                })}
+              </div>
+              <div className="eyebrow reveal" style={{ marginTop: 48 }}>Websites I&apos;ve worked on</div>
+              <div className="chips reveal">
+                {sites.map(([label, href]) => (
+                  <a className="chip" href={href} key={href}>{label}</a>
+                ))}
+              </div>
+            </div>
+          </section>
+
+          <section className="s" id="experience">
+            <div className="inner">
+              <div className="eyebrow reveal">Experience</div>
+              <h2 className="reveal">Where I&apos;ve worked.</h2>
+              <div className="tl">
+                {jobs.map(([when, role, co, text]) => (
+                  <div className="row reveal" key={role + co}>
+                    <div className="when">{when}</div>
+                    <div>
+                      <h3>{role}</h3>
+                      <div className="co">{co}</div>
+                      <p>{text}</p>
+                    </div>
+                  </div>
+                ))}
+                <div className="row reveal">
+                  <div className="when">Education</div>
+                  <div>
+                    <h3>MSc Computer Science and Technology</h3>
+                    <div className="co">Ulster University, UK (2025) / BSc, The Superior University (2020 - 2024)</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section className="s" id="skills">
+            <div className="inner">
+              <div className="eyebrow reveal">Skills</div>
+              <h2 className="reveal">Tools I ship with, daily.</h2>
+              <div className="tl">
+                {skills.map(([k, list]) => (
+                  <div className="skillrow reveal" key={k as string}>
+                    <div className="k">{k as string}</div>
+                    <div className="chips">
+                      {(list as string[]).map((s) => (<span className="chip" key={s}>{s}</span>))}
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </section>
+
+          <section className="s" id="mcp">
+            <div className="inner">
+              <div className="eyebrow reveal">Agent-ready</div>
+              <h2 className="reveal">Ask my profile from your agent.</h2>
+              <div className="urlbox reveal">
+                <code>{MCP_URL}</code>
+                <CopyButton text={MCP_URL} />
+              </div>
+              <p className="note reveal">Streamable HTTP. Read-only. No login needed.</p>
+
+              <div className="grid g3" style={{ marginTop: 40 }}>
+                <div className="card reveal">
+                  <div className="n">01</div>
+                  <h3>Claude</h3>
+                  <ol>
+                    <li>Open Settings, then Connectors.</li>
+                    <li>Click Add custom connector.</li>
+                    <li>Name it abdulhayee and paste the URL above.</li>
+                    <li>Ask: &quot;What has Abdul built?&quot;</li>
+                  </ol>
+                </div>
+                <div className="card reveal">
+                  <div className="n">02</div>
+                  <h3>ChatGPT</h3>
+                  <ol>
+                    <li>Open Settings, then Apps &amp; Connectors.</li>
+                    <li>Turn on developer mode and click Create.</li>
+                    <li>Paste the URL and save.</li>
+                    <li>Ask it to call get_profile.</li>
+                  </ol>
+                </div>
+                <div className="card reveal">
+                  <div className="n">03</div>
+                  <h3>Cursor or any client</h3>
+                  <ol>
+                    <li>Add a streamable-HTTP MCP server.</li>
+                    <li>Paste the URL above.</li>
+                    <li>Run tools/list to see the five tools.</li>
+                  </ol>
+                </div>
+              </div>
+
+              <div className="tools reveal">
+                {tools.map(([name, desc]) => (
+                  <div className="tool" key={name}>
+                    <code>{name}</code>
+                    <span>{desc}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </section>
+
+          <section className="s">
+            <div className="inner">
+              <div className="eyebrow reveal">FAQ</div>
+              <h2 className="reveal">What people usually ask.</h2>
+              <div className="reveal">
+                {faq.map(([q, a]) => (
+                  <details key={q}>
+                    <summary>{q}</summary>
+                    <p>{a}</p>
+                  </details>
+                ))}
+              </div>
+            </div>
+          </section>
+
+          <section className="s" id="contact">
+            <div className="inner">
+              <div className="eyebrow reveal">Contact</div>
+              <h2 className="big reveal">Find me on LinkedIn and GitHub.</h2>
+              <div className="cta reveal">
+                <a className="btn solid" href="https://www.linkedin.com/in/abdul-hayee1">LinkedIn</a>
+                <a className="btn" href="https://github.com/abdulhayeedev">GitHub</a>
+                <a className="btn" href="https://github.com/abdulhayeedev/abdul-mcp">Source of this site</a>
+              </div>
+            </div>
+          </section>
+        </main>
 
         <footer>
-          <span>Abdul Hayee, Manchester UK</span>
-          <span>{MCP_URL}</span>
+          <div className="inner">
+            <span>Abdul Hayee / Manchester, UK</span>
+            <span>Next.js / TypeScript / Three.js / Vercel</span>
+          </div>
         </footer>
-      </main>
+      </div>
     </>
   );
 }
