@@ -1,6 +1,7 @@
 import Scene from "./Scene";
 import CopyButton from "./CopyButton";
 import Reveal from "./Reveal";
+import Rotator from "./Rotator";
 
 const SITE = "https://abdulhayee.vercel.app";
 const MCP_URL = SITE + "/api/mcp";
@@ -16,7 +17,7 @@ const ticker = [
 const stats = [
   ["50,000+", "products in one WooCommerce store"],
   ["6+", "years building for the web"],
-  ["5", "live MCP tools you can call"],
+  ["12", "live MCP tools you can call"],
   ["2", "computer science degrees"],
 ];
 
@@ -92,6 +93,13 @@ const tools = [
   ["get_skills", "Languages, frameworks, e-commerce, backend and AI skills."],
   ["get_projects", "Selected projects, with an optional keyword filter."],
   ["get_links", "GitHub, LinkedIn and portfolio links."],
+  ["get_cv", "A download link to my CV (PDF)."],
+  ["get_education", "My degrees and where I studied."],
+  ["get_websites", "Websites I have worked on."],
+  ["get_current_focus", "What I am working on right now."],
+  ["get_work_style", "How I like to work."],
+  ["get_faq", "Common questions about me and this server."],
+  ["search_profile", "Search everything about me by keyword."],
 ];
 
 const faq = [
@@ -102,6 +110,7 @@ const faq = [
 ];
 
 export default function Home() {
+  
   return (
     <>
       <Scene />
@@ -138,7 +147,7 @@ export default function Home() {
             <div className="inner">
               <p className="hello reveal">Hello, I&apos;m <b>Abdul Hayee</b></p>
               <h1 className="reveal">I build stores, plugins and AI tools that run in production.</h1>
-              <p className="tag reveal">I build <em>ecommerce</em> / <em>wordpress</em> / <em>ai agents</em></p>
+              <p className="tag reveal">I build <Rotator /></p>
               <p className="lead reveal">
                 Software engineer in Manchester. I work on WooCommerce stores, custom WordPress plugins
                 and small AI tools, from the first line of code to a live site.
@@ -278,7 +287,7 @@ export default function Home() {
                   <ol>
                     <li>Add a streamable-HTTP MCP server.</li>
                     <li>Paste the URL above.</li>
-                    <li>Run tools/list to see the five tools.</li>
+                    <li>Run tools/list to see all twelve tools.</li>
                   </ol>
                 </div>
               </div>
@@ -316,6 +325,7 @@ export default function Home() {
               <div className="cta reveal">
                 <a className="btn solid" href="https://www.linkedin.com/in/abdul-hayee1">LinkedIn</a>
                 <a className="btn" href="https://github.com/abdulhayeedev">GitHub</a>
+                <a className="btn" href="/Abdul_Hayee_CV.pdf">Download CV</a>
                 <a className="btn" href="https://github.com/abdulhayeedev/abdul-mcp">Source of this site</a>
               </div>
             </div>
