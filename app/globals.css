@@ -183,3 +183,7 @@ footer .inner{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px
 /* sacrificial */
 /* softer green */
 .herovid{filter:grayscale(1) sepia(.45) hue-rotate(92deg) saturate(1.5) brightness(.6) contrast(1.2)!important;object-position:50% 18%}
+/* sacrificial */
+/* bigger rotator */
+.hero .tag{font-size:clamp(18px,2.3vw,28px);letter-spacing:.1em;line-height:1.5;margin:22px 0 18px}
+.hero .tag .rot{min-height:1.5em}
