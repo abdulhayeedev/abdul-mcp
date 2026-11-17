@@ -177,3 +177,6 @@ footer .inner{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px
 @keyframes glow{0%,100%{text-shadow:0 0 10px rgba(0,255,65,.2)}50%{text-shadow:0 0 26px rgba(0,255,65,.65)}}
 @media(max-width:760px){.herovid{width:100%;object-position:62% 20%;-webkit-mask-image:none;mask-image:none}.heroshade{background:linear-gradient(90deg,rgba(0,0,0,.94),rgba(0,0,0,.7)),linear-gradient(0deg,#000 0%,rgba(0,0,0,0) 30%)}.status{display:none}}
 @media(prefers-reduced-motion:reduce){.scan{display:none}.status i{animation:none}.hello b,.tag .rot{animation:none}}
+/* sacrificial */
+/* green tint */
+.herovid{filter:grayscale(1) sepia(1) hue-rotate(92deg) saturate(2.4) brightness(.95) contrast(1.2)!important}
