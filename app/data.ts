@@ -47,14 +47,16 @@ export const links = {
   linkedin: "https://www.linkedin.com/in/abdul-hayee1",
   portfolio: "https://abdulhayee.vercel.app",
 };
+
 export const websites = [
-  { name: "vcreative.net", url: "https://vcreative.net" },
+  { name: "shop.myeq.com", url: "https://shop.myeq.com" },
+  { name: "fybellebeauty.com", url: "https://fybellebeauty.com" },
+  { name: "cookiechips.com", url: "https://cookiechips.com" },
+  { name: "active-hop.com", url: "https://www.active-hop.com" },
+  { name: "chipsa.design", url: "https://chipsa.design" },
   { name: "vofspace.com", url: "https://vofspace.com" },
   { name: "fundmydeductible.com", url: "https://fundmydeductible.com" },
   { name: "maderaresidential.com", url: "https://maderaresidential.com" },
-  { name: "thecobuilders.com", url: "https://thecobuilders.com" },
-  { name: "dotlogics.com", url: "https://dotlogics.com" },
-  { name: "waybase.com", url: "https://waybase.com" },
 ];
 
 export const currently = [
