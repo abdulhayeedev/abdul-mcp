@@ -2,6 +2,7 @@ import Scene from "./Scene";
 import CopyButton from "./CopyButton";
 import Reveal from "./Reveal";
 import Rotator from "./Rotator";
+import HeroBg from "./HeroBg";
 import { websites } from "./data";
 
 const SITE = "https://abdulhayee.vercel.app";
@@ -135,6 +136,7 @@ export default function Home() {
 
         <main id="top">
           <section className="hero">
+            <HeroBg />
             <div className="inner">
               <p className="hello reveal">Hello, I&apos;m <b>Abdul Hayee</b></p>
               <h1 className="reveal">I build stores, plugins and AI tools that run in production.</h1>
