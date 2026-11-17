@@ -26,11 +26,11 @@ export default function Scene() {
 
     const outer = new THREE.LineSegments(
       new THREE.WireframeGeometry(new THREE.IcosahedronGeometry(4, 2)),
-      new THREE.LineBasicMaterial({ color: 0xffffff, transparent: true, opacity: 0.28 })
+      new THREE.LineBasicMaterial({ color: 0x00ff41, transparent: true, opacity: 0.22 })
     );
     const inner = new THREE.LineSegments(
       new THREE.WireframeGeometry(new THREE.IcosahedronGeometry(2.3, 1)),
-      new THREE.LineBasicMaterial({ color: 0xffffff, transparent: true, opacity: 0.55 })
+      new THREE.LineBasicMaterial({ color: 0x00ff41, transparent: true, opacity: 0.4 })
     );
     group.add(outer, inner);
 
@@ -48,7 +48,7 @@ export default function Scene() {
     geo.setAttribute("position", new THREE.BufferAttribute(pos, 3));
     const dust = new THREE.Points(
       geo,
-      new THREE.PointsMaterial({ color: 0xffffff, size: 0.035, transparent: true, opacity: 0.7 })
+      new THREE.PointsMaterial({ color: 0x00ff41, size: 0.035, transparent: true, opacity: 0.55 })
     );
     scene.add(dust);
 
