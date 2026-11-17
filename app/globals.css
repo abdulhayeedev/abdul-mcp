@@ -155,3 +155,5 @@ footer .inner{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px
 
 /* cookie chips */
 #work .chips a.chip[href*="cookiechips"]::before{background-image:url(/site-cookiechips.jpg)}
+
+#work .chips a.chip[href*="active-hop"]::before{background-image:url(/site-activehop.jpg)}
