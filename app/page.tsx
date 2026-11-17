@@ -139,7 +139,7 @@ export default function Home() {
             <HeroBg />
             <div className="inner">
               <p className="hello reveal">Hello, I&apos;m <b>Abdul Hayee</b></p>
-              <h1 className="reveal">I build stores, plugins and AI tools that run in production.</h1>
+              <h1 className="reveal">You bring the idea. I take it from sketch to live site.</h1>
               <p className="tag reveal">I build <Rotator /></p>
               <p className="lead reveal">
                 Software engineer in Manchester. I do it all: e-commerce stores, WordPress themes and plugins,
