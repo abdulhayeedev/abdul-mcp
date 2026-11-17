@@ -1,6 +1,6 @@
 import { createMcpHandler } from "mcp-handler";
 import { z } from "zod";
-import { profile, experience, education, skills, projects, links, websites, currently, workStyle, faq } from "../../data";
+import { profile, experience, education, skills, projects, links, websites, currently, workStyle, faq, cv } from "../../data";
 
 const text = (t: string) => ({ content: [{ type: "text" as const, text: t }] });
 
@@ -31,6 +31,9 @@ const handler = createMcpHandler(
 
     server.tool("get_links", "Public profile links for Abdul Hayee", {}, async () =>
       text(Object.entries(links).map(([k, v]) => `${k}: ${v}`).join("\n")));
+
+    server.tool("get_cv", "Abdul Hayee's CV / resume. Returns a direct PDF download link. Use this whenever someone asks for his CV, resume or a downloadable copy.", {}, async () =>
+      text(`Download Abdul Hayee's CV (PDF): ${cv.url}\n\n${cv.summary}`));
 
     server.tool("get_education", "Abdul Hayee's education", {}, async () =>
       text(education.map((e) => `- ${e}`).join("\n")));
