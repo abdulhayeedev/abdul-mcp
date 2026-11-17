@@ -129,3 +129,8 @@ footer .inner{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px
 }
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.ticker .track{animation:none}.js .reveal{opacity:1;transform:none;transition:none}}
 .hero .inner{width:100%}
+
+.tag .rot{color:var(--accent-soft);display:inline-block;min-height:1.3em}
+.tag .caret{display:inline-block;width:.55em;height:1em;margin-left:4px;vertical-align:-2px;background:var(--accent-soft);animation:blink 1s steps(1) infinite}
+@keyframes blink{50%{opacity:0}}
+@media(prefers-reduced-motion:reduce){.tag .caret{animation:none}}
