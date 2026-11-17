@@ -78,3 +78,10 @@ export const faq = [
   { q: "How can I see Abdul's code?", a: "On GitHub at github.com/abdulhayeedev. The source of this MCP server is at github.com/abdulhayeedev/abdul-mcp." },
   { q: "How do I connect to this MCP server?", a: "Add https://abdulhayee.vercel.app/api/mcp as a custom connector in Claude, an MCP server in ChatGPT developer mode, or a streamable-HTTP server in Cursor. No login is needed." },
 ];
+
+export const cv = {
+  fileName: "Abdul_Hayee_CV.pdf",
+  url: "https://abdulhayee.vercel.app/Abdul_Hayee_CV.pdf",
+  summary:
+    "Two-page CV covering my professional summary, experience (Arrow Engineering Components, VulcanTech UK, Techlio, Gigalabs), education (MSc and BSc Computer Science), skills and key projects.",
+};
