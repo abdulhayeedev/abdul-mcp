@@ -90,7 +90,7 @@ const tools = [
 
 const faq = [
   ["What do you build?", "Online stores, WordPress and WooCommerce plugins, React front ends and small AI tools. Mostly practical things that run in production."],
-  ["Where are you based?", "Manchester, UK."],
+  ["Where are you based?", "Manchester, UK. I work remotely with clients worldwide."],
   ["What is the MCP server on this site?", "A small read-only server. Connect it to Claude, ChatGPT or Cursor and the assistant can answer questions about my experience, skills and projects from my real details. It can't read or change anything on your accounts."],
   ["Is the MCP server safe to connect?", "Yes. It only returns fixed information about me, needs no login and doesn't store what you ask."],
 ];
@@ -126,7 +126,7 @@ export default function Home() {
               <h1 className="reveal">You bring the idea. I take it from sketch to live site.</h1>
               <p className="tag reveal">I build <Rotator /></p>
               <p className="lead reveal">
-                Software engineer in Manchester. I do it all: e-commerce stores, WordPress themes and plugins,
+                Software engineer in Manchester, working remotely worldwide. I do it all: e-commerce stores, WordPress themes and plugins,
                 React web apps, POS systems, AI agents and MCP servers, from the first design to a live site.
               </p>
               <div className="cta reveal">
@@ -289,7 +289,7 @@ export default function Home() {
 
         <footer>
           <div className="inner">
-            <span>Abdul Hayee / Manchester, UK</span>
+            <span>Abdul Hayee / Manchester, UK / Remote worldwide</span>
             <span>Next.js / TypeScript / Three.js / Vercel</span>
           </div>
         </footer>
