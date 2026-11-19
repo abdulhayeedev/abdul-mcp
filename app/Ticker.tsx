@@ -1,6 +1,7 @@
 const items = [
   "Open to freelance contracts",
-  "Software engineer / Manchester, UK",
+  "Software engineer",
+  "Based in Manchester - Remote worldwide",
   "WordPress + WooCommerce",
   "AI agents + RAG",
   "React + TypeScript",
