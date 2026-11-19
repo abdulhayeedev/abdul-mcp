@@ -287,7 +287,8 @@ export default function Home() {
                 <a className="btn solid" href="https://www.linkedin.com/in/abdul-hayee1">LinkedIn</a>
                 <a className="btn" href="https://github.com/abdulhayeedev">GitHub</a>
                 <a className="btn" href="/Abdul_Hayee_CV.pdf">Download CV</a>
-                <a className="btn" href="https://github.com/abdulhayeedev/abdul-mcp">Source of this site</a>
+                <a className="btn" href="https://wa.me/447310679346?text=Hi%20Abdul%2C%20I%20found%20your%20portfolio%20and%20wanted%20to%20get%20in%20touch." target="_blank" rel="noopener noreferrer">WhatsApp</a>
+                <a className="btn" href="mailto:inputabdul@gmail.com?subject=Hello%20Abdul">Email</a>
               </div>
             </div>
           </section>
