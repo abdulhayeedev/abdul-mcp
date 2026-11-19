@@ -1,9 +1,9 @@
 import "./globals.css";
 
 export const metadata = {
-  title: "Abdul Hayee | Software Engineer, Manchester UK",
+  title: "Abdul Hayee | Software Engineer, Manchester UK / Remote Worldwide",
   description:
-    "Portfolio of Abdul Hayee, a software engineer in Manchester building WooCommerce stores, WordPress plugins and AI tools. Agent-ready: connect via MCP.",
+    "Portfolio of Abdul Hayee, a software engineer in Manchester, working remotely worldwide, building WooCommerce stores, WordPress plugins and AI tools. Agent-ready: connect via MCP.",
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
