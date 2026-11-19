@@ -250,3 +250,7 @@ a.fcard:hover{border-color:#4ade80;transform:translateY(-3px)}
 .f-label{font-size:22px;margin-top:6px}
 .f-count{font-size:12px}
 @media(max-width:560px){.folders{grid-template-columns:repeat(2,1fr);gap:16px 10px}.folder{width:140px;height:110px}.f-peek{left:12px;right:12px;height:68px}.f-front{height:80px}.f-front em{font-size:17px}.f-label{font-size:19px}}
+
+/* folder logos */
+.f-icon{width:52px;height:52px;fill:#04300f;filter:drop-shadow(0 1px 0 rgba(255,255,255,.35))}
+@media(max-width:560px){.f-icon{width:42px;height:42px}}
