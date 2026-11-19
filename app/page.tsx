@@ -149,7 +149,7 @@ export default function Home() {
               <div className="svc-top">
                 <div>
                   <div className="eyebrow reveal">Services</div>
-                  <h2 className="reveal">What I can build for you.</h2>
+                  <h2 className="reveal">Hire me for</h2>
                 </div>
                 <div className="svc-side reveal">
                   <p>Fixed-scope or ongoing work, clear communication, no hand-holding. Every service below is something I&apos;ve shipped.</p>
