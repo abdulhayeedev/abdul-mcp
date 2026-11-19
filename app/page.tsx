@@ -221,6 +221,20 @@ export default function Home() {
             </div>
           </section>
 
+          <section className="s cta-wrap">
+            <div className="inner">
+              <div className="cta-band reveal">
+                <div className="eyebrow">Contact</div>
+                <h2>Need an engineer who can take your idea from sketch to live site?</h2>
+                <p>I&apos;m available for e-commerce, WordPress, AI agent and web app projects, working remotely worldwide.</p>
+                <div className="cta-btns">
+                  <a className="btn solid" href="/contact">Start a conversation</a>
+                  <a className="btn" href="https://wa.me/447310679346?text=Hi%20Abdul%2C%20I%20found%20your%20portfolio%20and%20wanted%20to%20get%20in%20touch." target="_blank" rel="noopener noreferrer">Message on WhatsApp &#8599;</a>
+                </div>
+              </div>
+            </div>
+          </section>
+
           <section className="s" id="experience">
             <div className="inner">
               <div className="eyebrow reveal">Experience</div>
