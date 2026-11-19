@@ -68,7 +68,7 @@ const glance = [
   ["Full name", "Abdul Hayee"],
   ["Based", "Manchester, UK / Remote worldwide"],
   ["Role", "Software Engineer"],
-  ["Years", "6+ building for the web"],
+  ["Years", "6+ years shipping software"],
 ];
 
 export default function AboutPage() {
@@ -105,10 +105,10 @@ export default function AboutPage() {
               <div className="ab-hero">
                 <div className="ab-text">
                   <div className="eyebrow reveal">About</div>
-                  <h1 className="ab-title reveal">Software engineer, Manchester-based. Building for the web since 2019.</h1>
+                  <h1 className="ab-title reveal">Software engineer, Manchester-based. Shipping software for 6+ years.</h1>
                   <p className="reveal">
-                    I&apos;m a Software Engineer and Ecommerce Web Developer in Manchester, UK, working remotely with
-                    clients worldwide. I do it all: e-commerce stores, WordPress themes and plugins, React front ends,
+                    I&apos;m a Software Engineer in Manchester, UK, working remotely with clients worldwide. I&apos;ve been
+                    shipping software since 2019: e-commerce platforms, Python and PHP back ends, React front ends,
                     and AI tools.
                   </p>
                   <p className="reveal">
