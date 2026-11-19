@@ -47,8 +47,8 @@ export default function HeroBg() {
         preload="auto"
         poster="/hero-poster.jpg"
       >
-        <source src="/hero.webm" type="video/webm" />
         <source src="/hero.mp4" type="video/mp4" />
+        <source src="/hero.webm" type="video/webm" />
       </video>
       <div className="heroshade" />
       <div className="scan" />
