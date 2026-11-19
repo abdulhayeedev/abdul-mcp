@@ -356,7 +356,7 @@ a.fcard:hover{border-color:#4ade80;transform:translateY(-3px)}
 .ab-title{font-family:var(--display);font-size:clamp(34px,5.2vw,64px);line-height:1.04;letter-spacing:-.02em;margin:14px 0 24px}
 .ab-text p{color:var(--muted);font-size:clamp(15px,1.3vw,17px);margin:0 0 16px;max-width:60ch}
 .ab-card{border:1px solid var(--line3);background:var(--card);border-radius:16px;overflow:hidden}
-.ab-photo{aspect-ratio:4/3;background:url(/about-photo2.jpg) center/cover no-repeat;border-bottom:1px solid var(--line2)}
+.ab-photo{aspect-ratio:4/5;background:#000 url(/about-photo3.jpg) center 30%/cover no-repeat;border-bottom:1px solid var(--line2)}
 .ab-glance{padding:18px 20px 8px}
 .ab-glance .eyebrow{margin-bottom:10px}
 .ab-row{display:flex;justify-content:space-between;gap:16px;padding:11px 0;border-top:1px solid var(--line);font-size:14px}
