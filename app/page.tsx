@@ -124,7 +124,7 @@ export default function Home() {
             <a className="logo" href="#top">abdulhayee</a>
             <nav className="nav">
               <a href="#work">Work</a>
-              <a href="#experience">Experience</a>
+              <a href="/about">About</a>
               <a href="#skills">Skills</a>
               <a href="/contact">Contact</a>
               <a className="mcp" href="#mcp">MCP</a>
@@ -230,32 +230,6 @@ export default function Home() {
                 <div className="cta-btns">
                   <a className="btn solid" href="/contact">Start a conversation</a>
                   <a className="btn" href="https://wa.me/447310679346?text=Hi%20Abdul%2C%20I%20found%20your%20portfolio%20and%20wanted%20to%20get%20in%20touch." target="_blank" rel="noopener noreferrer">Message on WhatsApp &#8599;</a>
-                </div>
-              </div>
-            </div>
-          </section>
-
-          <section className="s" id="experience">
-            <div className="inner">
-              <div className="eyebrow reveal">Experience</div>
-              <h2 className="reveal">Where I&apos;ve worked.</h2>
-              <div className="tl">
-                {jobs.map(([when, role, co, text]) => (
-                  <div className="row reveal" key={role + co}>
-                    <div className="when">{when}</div>
-                    <div>
-                      <h3>{role}</h3>
-                      <div className="co">{co}</div>
-                      <p>{text}</p>
-                    </div>
-                  </div>
-                ))}
-                <div className="row reveal">
-                  <div className="when">Education</div>
-                  <div>
-                    <h3>MSc Computer Science and Technology</h3>
-                    <div className="co">Ulster University, UK (2025) / BSc, The Superior University (2020 - 2024)</div>
-                  </div>
                 </div>
               </div>
             </div>
