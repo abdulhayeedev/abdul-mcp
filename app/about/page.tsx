@@ -61,7 +61,9 @@ const skills = [
   ["Ecommerce / CMS", ["WordPress", "WooCommerce", "Shopify", "Elementor"]],
   ["Backend / data", ["Supabase", "PostgreSQL", "MySQL", "REST APIs", "GraphQL"]],
   ["AI", ["LLM integration", "RAG", "AI agents", "MCP servers"]],
-  ["Tools", ["Git", "GitHub", "Docker", "Vercel", "Figma"]],
+  ["Infra / tools", ["Git", "GitHub", "Docker", "Vercel"]],
+  ["Design", ["Figma", "Adobe XD", "Three.js", "Graphic design"]],
+  ["Analytics / ads", ["Google Analytics", "Search Console", "Google Ads", "Meta Ads"]],
 ] as const;
 
 const glance = [
@@ -152,7 +154,7 @@ export default function AboutPage() {
 
           <section className="s ab-sec">
             <div className="inner">
-              <div className="ab-label reveal">01 / TIMELINE</div>
+              <div className="ab-label reveal"><i>01</i> / TIMELINE</div>
               <div className="ab-tl">
                 {jobs.map((j) => (
                   <article className="ab-job reveal" key={j.role + j.co}>
@@ -184,7 +186,7 @@ export default function AboutPage() {
 
           <section className="s ab-sec" id="skills">
             <div className="inner">
-              <div className="ab-label reveal">02 / SKILLS</div>
+              <div className="ab-label reveal"><i>02</i> / SKILLS</div>
               <div className="ab-skills">
                 {skills.map(([title, items]) => (
                   <div className="ab-skill reveal" key={title}>
@@ -202,7 +204,7 @@ export default function AboutPage() {
 
           <section className="s ab-sec">
             <div className="inner">
-              <div className="ab-label reveal">03 / EDUCATION</div>
+              <div className="ab-label reveal"><i>03</i> / EDUCATION</div>
               <div className="ab-edu reveal">
                 <div className="ab-edu-row">
                   <b>Ulster University, UK</b>
