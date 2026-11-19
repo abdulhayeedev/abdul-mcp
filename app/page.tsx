@@ -17,6 +17,13 @@ const services = [
   { n: "04", name: "Web apps & internal tools", text: "React front ends, POS systems and tracking tools with a Supabase back end.", tags: ["React", "TypeScript", "Supabase"] },
 ];
 
+const stack = [
+  "TypeScript", "JavaScript", "PHP", "Python", "Flask", "React", "Next.js", "TanStack", "Three.js",
+  "HTML / CSS", "Tailwind", "Bootstrap", "WordPress", "WooCommerce", "Shopify", "Elementor",
+  "REST APIs", "Supabase", "Vercel", "Git / GitHub", "MCP", "Claude", "RAG", "LLM tools",
+  "Figma", "Adobe XD", "Google Analytics", "Search Console",
+];
+
 const stats = [
   ["50,000+", "products in one WooCommerce store"],
   ["6+", "years building for the web"],
@@ -199,6 +206,18 @@ export default function Home() {
               <div className="eyebrow reveal">Work by stack</div>
               <h2 className="reveal">Things I&apos;ve built and shipped.</h2>
               <Folders />
+            </div>
+          </section>
+
+          <section className="s stack">
+            <div className="inner">
+              <div className="eyebrow reveal">Stack</div>
+              <h2 className="reveal">Tools I ship with, daily.</h2>
+              <div className="stack-chips reveal">
+                {stack.map((t) => (
+                  <span key={t}>{t}</span>
+                ))}
+              </div>
             </div>
           </section>
 
