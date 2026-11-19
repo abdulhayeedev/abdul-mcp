@@ -390,3 +390,16 @@ a.fcard:hover{border-color:#4ade80;transform:translateY(-3px)}
 .ab-edu-row i{font-style:normal;font-family:var(--mono);font-size:12px;color:var(--soft)}
 @media(max-width:900px){.ab-skills{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:760px){.ab-hero{grid-template-columns:1fr}.ab-job{grid-template-columns:1fr}.ab-skills{grid-template-columns:1fr}.ab-edu-row{grid-template-columns:1fr;gap:4px}}
+
+/* header v2 */
+.header .inner{display:grid;grid-template-columns:1fr auto 1fr;align-items:center}
+.logo{font-size:24px;font-weight:700;letter-spacing:-.03em}
+.nav{justify-content:center;gap:4px}
+.nav a,.nav a.mcp{font-family:var(--sans);font-size:15px;font-weight:500;letter-spacing:0;text-transform:none;color:var(--muted);border:0;padding:8px 14px}
+.nav a:hover,.nav a[aria-current=page]{color:var(--text);background:transparent}
+.hsoc{display:flex;gap:4px;justify-content:flex-end;align-items:center}
+.hsoc a{width:36px;height:36px;display:grid;place-items:center;border-radius:8px;color:var(--muted);transition:color .2s}
+.hsoc a:hover{color:var(--accent)}
+.hsoc svg{width:18px;height:18px;fill:currentColor}
+@media(max-width:900px){.hsoc a:nth-child(n+3){display:none}}
+@media(max-width:760px){.header .inner{display:flex;justify-content:space-between}.hsoc{display:none}.nav a.mcp{color:var(--accent)}}
