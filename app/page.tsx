@@ -3,6 +3,7 @@ import CopyButton from "./CopyButton";
 import Reveal from "./Reveal";
 import Rotator from "./Rotator";
 import HeroBg from "./HeroBg";
+import Folders from "./Folders";
 import { websites } from "./data";
 
 const SITE = "https://abdulhayee.vercel.app";
@@ -191,12 +192,8 @@ export default function Home() {
                   );
                 })}
               </div>
-              <div className="eyebrow reveal" style={{ marginTop: 48 }}>Websites I&apos;ve worked on</div>
-              <div className="chips reveal">
-                {websites.map((w) => (
-                  <a className="chip" href={w.url} key={w.url}>{w.name}</a>
-                ))}
-              </div>
+              <div className="eyebrow reveal" style={{ marginTop: 48 }}>Websites and projects, by stack</div>
+              <Folders />
             </div>
           </section>
 
