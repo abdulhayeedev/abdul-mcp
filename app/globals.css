@@ -479,3 +479,12 @@ html,body{max-width:100%;overflow-x:clip}
 .hero{padding-top:min(380px,72vw)}
 .herovid{height:min(520px,100vw)}
 }
+
+/* mobile header: social icons instead of MCP */
+@media(max-width:760px){
+.header .inner .nav{display:none}
+.header .inner .hsoc{display:flex;gap:2px;flex-shrink:0}
+.header .inner .hsoc a{width:36px;height:36px}
+.header .inner .hsoc a:nth-child(n+3){display:none}
+.header .inner .logo{min-width:0;white-space:nowrap;font-size:clamp(15px,5.2vw,22px)}
+}
