@@ -4,18 +4,11 @@ import Reveal from "./Reveal";
 import Rotator from "./Rotator";
 import HeroBg from "./HeroBg";
 import Folders from "./Folders";
+import Ticker from "./Ticker";
 import { websites } from "./data";
 
 const SITE = "https://abdulhayee.vercel.app";
 const MCP_URL = SITE + "/api/mcp";
-
-const ticker = [
-  "Software engineer / Manchester, UK",
-  "WordPress + WooCommerce",
-  "AI agents + RAG",
-  "React + TypeScript",
-  "Agent-ready / connect via MCP",
-];
 
 const stats = [
   ["50,000+", "products in one WooCommerce store"],
@@ -110,17 +103,7 @@ export default function Home() {
       <div className="veil" />
       <Reveal />
       <div className="wrap">
-        <div className="ticker" aria-hidden="true">
-          <div className="track">
-            {[0, 1].map((k) => (
-              <span key={k}>
-                {ticker.map((t) => (
-                  <span key={t + k}>{t} <span>+</span></span>
-                ))}
-              </span>
-            ))}
-          </div>
-        </div>
+        <Ticker />
 
         <header className="header">
           <div className="inner">
