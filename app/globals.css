@@ -329,3 +329,12 @@ a.fcard:hover{border-color:#4ade80;transform:translateY(-3px)}
 .svc-link{margin-top:auto;font-family:var(--mono);font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:#4ade80}
 @media(max-width:760px){.svc-top{grid-template-columns:1fr;gap:20px}.svc-card{min-height:0}}
 @media(prefers-reduced-motion:reduce){.svc-card{transition:none}}
+
+/* stack chips */
+.stack{padding-top:20px}
+.stack h2{margin:10px 0 26px}
+.stack-chips{display:flex;flex-wrap:wrap;gap:12px}
+.stack-chips span{font-size:15px;font-weight:500;color:var(--text);border:1px solid rgba(255,255,255,.12);background:rgba(10,20,14,.7);border-radius:999px;padding:11px 20px;transition:border-color .2s,background .2s,transform .2s}
+.stack-chips span:hover{border-color:rgba(74,222,128,.6);background:rgba(74,222,128,.1);transform:translateY(-2px)}
+@media(max-width:640px){.stack-chips{gap:9px}.stack-chips span{font-size:13.5px;padding:9px 15px}}
+@media(prefers-reduced-motion:reduce){.stack-chips span{transition:none}}
