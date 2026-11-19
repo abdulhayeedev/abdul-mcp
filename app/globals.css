@@ -403,3 +403,13 @@ a.fcard:hover{border-color:#4ade80;transform:translateY(-3px)}
 .hsoc svg{width:18px;height:18px;fill:currentColor}
 @media(max-width:900px){.hsoc a:nth-child(n+3){display:none}}
 @media(max-width:760px){.header .inner{display:flex;justify-content:space-between}.hsoc{display:none}.nav a.mcp{color:var(--accent)}}
+
+/* skills match */
+.ab-label{display:flex;align-items:center;gap:18px;color:var(--muted);text-align:left}
+.ab-label:before,.ab-label:after{content:"";flex:1;height:1px;background:var(--line2)}
+.ab-label i{font-style:normal;color:var(--accent)}
+.ab-skills{grid-auto-rows:1fr;gap:18px}
+.ab-skill{border-radius:20px;padding:22px 24px;background:rgba(5,8,10,.72);border:1px solid var(--line)}
+.ab-skill .ab-k{font-size:13px;letter-spacing:.14em;color:var(--text);margin-bottom:16px;font-weight:600}
+.ab-skill ul{list-style:none;padding:0;margin:0}
+.ab-skill li{font-family:var(--mono);font-size:13px;font-weight:600;line-height:1.4;margin:0 0 9px;color:var(--text)}
