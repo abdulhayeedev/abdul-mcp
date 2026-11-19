@@ -129,7 +129,7 @@ export default function Home() {
               <a href="#work">Work</a>
               <a href="#experience">Experience</a>
               <a href="#skills">Skills</a>
-              <a href="#contact">Contact</a>
+              <a href="/contact">Contact</a>
               <a className="mcp" href="#mcp">MCP</a>
             </nav>
           </div>
