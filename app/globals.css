@@ -189,3 +189,38 @@ footer .inner{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px
 .hero .tag .rot{min-height:1.5em}
 /* mobile hero: show video */
 @media(max-width:760px){.herovid{filter:grayscale(1) sepia(.45) hue-rotate(92deg) saturate(1.5) brightness(.95) contrast(1.1)!important;object-position:50% 20%}.heroshade{background:linear-gradient(180deg,rgba(0,0,0,.2) 0%,rgba(0,0,0,.34) 45%,rgba(0,0,0,.6) 75%,rgba(0,0,0,.93) 100%)}.hero .inner .hello,.hero .inner h1,.hero .inner .tag,.hero .inner .lead{text-shadow:0 2px 16px rgba(0,0,0,.9),0 0 4px rgba(0,0,0,.6)}}
+
+/* folders */
+.folders{display:grid;grid-template-columns:repeat(auto-fill,minmax(140px,1fr));gap:18px 14px;margin-top:10px}
+.fbtn{all:unset;box-sizing:border-box;cursor:pointer;display:flex;flex-direction:column;align-items:center;gap:6px;padding:16px 8px 14px;border-radius:16px;border:1px solid transparent;transition:background .25s,border-color .25s}
+.fbtn:hover{background:rgba(255,255,255,.04)}
+.fbtn:focus-visible{outline:2px solid #4ade80;outline-offset:2px}
+.fbtn[aria-expanded=true]{background:rgba(0,255,65,.06);border-color:rgba(0,255,65,.35)}
+.folder{position:relative;display:block;width:116px;height:90px;perspective:500px;margin-top:6px}
+.f-back{position:absolute;left:0;right:0;top:8px;bottom:0;border-radius:6px 10px 8px 8px;background:#c99a1f}
+.f-back::before{content:"";position:absolute;left:0;top:-8px;width:44px;height:12px;border-radius:6px 8px 0 0;background:#c99a1f}
+.f-peek{position:absolute;left:10px;right:10px;top:12px;height:56px;border-radius:4px;background:#1a1a1a linear-gradient(135deg,#222,#0c0c0c) center top/cover no-repeat;box-shadow:0 2px 6px rgba(0,0,0,.45);transform:rotate(-2deg);transition:transform .45s cubic-bezier(.2,.8,.2,1)}
+.f-front{position:absolute;left:0;right:0;bottom:0;height:66px;border-radius:7px 7px 9px 9px;background:linear-gradient(180deg,#ffd966,#f0b429);transform-origin:50% 100%;transition:transform .45s cubic-bezier(.2,.8,.2,1);display:flex;align-items:center;justify-content:center;box-shadow:inset 0 1px 0 rgba(255,255,255,.55)}
+.f-front em{font-style:normal;font-family:var(--mono);font-weight:500;font-size:14px;letter-spacing:.08em;color:#4a3300}
+.fbtn:hover .f-front,.fbtn[aria-expanded=true] .f-front{transform:rotateX(-32deg)}
+.fbtn:hover .f-peek,.fbtn[aria-expanded=true] .f-peek{transform:translateY(-12px) rotate(-3deg)}
+.f-label{font-size:17px;color:var(--text);margin-top:4px;text-align:center}
+.f-count{font-family:var(--mono);font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.fpanel{margin-top:22px;border:1px solid rgba(0,255,65,.25);border-radius:18px;background:rgba(0,0,0,.45);padding:18px;animation:fpanel .35s ease backwards}
+@keyframes fpanel{from{opacity:0;transform:translateY(-8px)}to{opacity:1;transform:none}}
+.fhead{display:flex;align-items:center;gap:12px;font-family:var(--mono);font-size:12px;letter-spacing:.08em;color:#4ade80;margin-bottom:14px}
+.fhead span:nth-child(2){color:var(--muted);margin-right:auto}
+.fclose{all:unset;cursor:pointer;width:28px;height:28px;border-radius:50%;border:1px solid rgba(255,255,255,.18);display:grid;place-items:center;font-size:18px;color:var(--text);transition:border-color .2s}
+.fclose:hover,.fclose:focus-visible{border-color:#4ade80}
+.fgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:16px}
+.fcard{display:block;border:1px solid rgba(255,255,255,.1);border-radius:14px;background:#0a0a0a;overflow:hidden;color:var(--text);text-decoration:none;animation:fly .65s cubic-bezier(.2,.9,.25,1.05) backwards;animation-delay:var(--d,0ms);transition:border-color .25s,transform .25s}
+a.fcard:hover{border-color:#4ade80;transform:translateY(-3px)}
+@keyframes fly{from{opacity:0;transform:translate(var(--fx,0px),var(--fy,-40px)) scale(.15) rotate(-6deg)}to{opacity:1;transform:none}}
+.fcard img{display:block;width:100%;aspect-ratio:16/10;object-fit:cover;object-position:top;background:#111}
+.fbody{display:flex;flex-direction:column;gap:7px;padding:12px 14px 14px}
+.fname{display:flex;justify-content:space-between;gap:8px;font-family:var(--mono);font-size:14px}
+.fname b{font-weight:500}.fname i{font-style:normal;color:#4ade80}
+.ftxt{font-size:14px;line-height:1.5;color:var(--muted)}
+.ftags{display:flex;flex-wrap:wrap;gap:6px}
+.ftags span{font-family:var(--mono);font-size:11px;border:1px solid rgba(255,255,255,.14);border-radius:999px;padding:3px 9px;color:var(--muted)}
+@media(prefers-reduced-motion:reduce){.fcard,.fpanel{animation:none}.f-front,.f-peek{transition:none}}
