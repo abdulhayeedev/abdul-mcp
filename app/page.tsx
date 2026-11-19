@@ -171,28 +171,8 @@ export default function Home() {
 
           <section className="s" id="work">
             <div className="inner">
-              <div className="eyebrow reveal">Selected work</div>
+              <div className="eyebrow reveal">Work by stack</div>
               <h2 className="reveal">Things I&apos;ve built and shipped.</h2>
-              <div className="grid g3">
-                {projects.map((p) => {
-                  const body = (
-                    <>
-                      <div className="n">{p.n}</div>
-                      <h3>{p.name}</h3>
-                      <p>{p.text}</p>
-                      <div className="meta">
-                        {p.tags.map((t) => (<span className="chip" key={t}>{t}</span>))}
-                      </div>
-                    </>
-                  );
-                  return p.href ? (
-                    <a className="card reveal" href={p.href} key={p.name}>{body}</a>
-                  ) : (
-                    <div className="card reveal" key={p.name}>{body}</div>
-                  );
-                })}
-              </div>
-              <div className="eyebrow reveal" style={{ marginTop: 48 }}>Websites and projects, by stack</div>
               <Folders />
             </div>
           </section>
