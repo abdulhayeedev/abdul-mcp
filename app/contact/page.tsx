@@ -1,6 +1,7 @@
 import Scene from "../Scene";
 import Reveal from "../Reveal";
 import ContactForm from "./ContactForm";
+import Ticker from "../Ticker";
 
 export const metadata = {
   title: "Contact | Abdul Hayee",
@@ -34,6 +35,7 @@ export default function ContactPage() {
       <div className="veil" />
       <Reveal />
       <div className="wrap">
+        <Ticker />
         <header className="header">
           <div className="inner">
             <a className="logo" href="/">abdulhayee</a>
