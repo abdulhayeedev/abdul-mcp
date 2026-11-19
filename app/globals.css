@@ -413,3 +413,34 @@ a.fcard:hover{border-color:#4ade80;transform:translateY(-3px)}
 .ab-skill .ab-k{font-size:13px;letter-spacing:.14em;color:var(--text);margin-bottom:16px;font-weight:600}
 .ab-skill ul{list-style:none;padding:0;margin:0}
 .ab-skill li{font-family:var(--mono);font-size:13px;font-weight:600;line-height:1.4;margin:0 0 9px;color:var(--text)}
+
+/* mcp page */
+.mc-in{max-width:960px;padding-top:clamp(40px,6vw,72px);padding-bottom:40px}
+.mc-eye{font-family:var(--mono);font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--muted);margin-bottom:18px}
+.mc-eye i{font-style:normal;color:var(--accent)}
+.mc-title{font-family:var(--display);font-size:clamp(40px,6vw,72px);line-height:1.02;letter-spacing:-.02em;margin:0 0 20px}
+.mc-lead{color:var(--muted);font-size:clamp(15px,1.3vw,17px);max-width:60ch;margin:0 0 36px}
+.mc-endpoint{display:flex;align-items:center;gap:18px;border:1px solid var(--line3);border-radius:16px;padding:18px 22px;background:rgba(5,10,8,.72);margin-bottom:28px;flex-wrap:wrap}
+.mc-endpoint span{font-family:var(--mono);font-size:10px;letter-spacing:.14em;color:var(--soft)}
+.mc-endpoint code{font-family:var(--mono);font-size:14px;color:var(--accent);flex:1;overflow-wrap:anywhere}
+.mc button{font-family:var(--mono);font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);background:transparent;border:1px solid var(--line3);border-radius:999px;padding:6px 12px;cursor:pointer}
+.mc button:hover{background:var(--card2)}
+.mc-cards{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.mc-card{border:1px solid var(--line2);border-radius:16px;padding:22px 20px;background:var(--card);display:flex;flex-direction:column;gap:10px}
+.mc-num{font-family:var(--mono);font-size:11px;color:var(--soft)}
+.mc-card h3{font-family:var(--display);font-size:22px;margin:0}
+.mc-card ol{margin:0;padding-left:18px;color:var(--muted);font-size:13px;display:grid;gap:8px}
+.mc-card p{margin:0;color:var(--muted);font-size:13px}
+.mc-mini{display:flex;align-items:flex-start;gap:8px;border:1px solid var(--line2);border-radius:10px;padding:10px;background:rgba(0,0,0,.35)}
+.mc-mini code{font-family:var(--mono);font-size:10.5px;color:var(--accent);flex:1;overflow-wrap:anywhere}
+.mc-h{font-family:var(--mono);font-size:12px;letter-spacing:.2em;color:var(--muted);margin:56px 0 18px}
+.mc-tools{border-top:1px solid var(--line)}
+.mc-tool{display:grid;grid-template-columns:200px 1fr;gap:16px;padding:14px 0;border-bottom:1px solid var(--line);align-items:baseline}
+.mc-tool code{font-family:var(--mono);font-size:13px;color:var(--accent)}
+.mc-tool span{font-size:14px;color:var(--muted)}
+.mc-note{margin:20px 0 0;font-family:var(--mono);font-size:12px;color:var(--soft)}
+.mc-ask{display:grid;gap:10px}
+.mc-q{border:1px solid var(--line);border-radius:10px;background:var(--card);padding:14px 18px;font-family:var(--mono);font-size:13px;color:var(--text)}
+.mc-q:before{content:"\2192  ";color:var(--accent)}
+@media(max-width:900px){.mc-cards{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:560px){.mc-cards{grid-template-columns:1fr}.mc-tool{grid-template-columns:1fr;gap:4px}}
