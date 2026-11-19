@@ -12,7 +12,27 @@ export default function HeroBg() {
       v.pause();
       return;
     }
-    v.play().catch(() => {});
+    const play = () => {
+      if (v.paused && !document.hidden) v.play().catch(() => {});
+    };
+    play();
+    // keep the loop running: browsers can pause it after clicks, overlays or tab switches
+    v.addEventListener("pause", play);
+    v.addEventListener("stalled", play);
+    document.addEventListener("visibilitychange", play);
+    document.addEventListener("click", play, true);
+    window.addEventListener("scroll", play, { passive: true });
+    window.addEventListener("focus", play);
+    const t = window.setInterval(play, 1500);
+    return () => {
+      v.removeEventListener("pause", play);
+      v.removeEventListener("stalled", play);
+      document.removeEventListener("visibilitychange", play);
+      document.removeEventListener("click", play, true);
+      window.removeEventListener("scroll", play);
+      window.removeEventListener("focus", play);
+      window.clearInterval(t);
+    };
   }, []);
 
   return (
