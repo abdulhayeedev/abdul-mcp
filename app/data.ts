@@ -1,7 +1,7 @@
 // Edit this file to change what the MCP server says about you.
 export const profile = {
   name: "Abdul Hayee",
-  headline: "Software Engineer and Ecommerce Web Developer based in Manchester, UK",
+  headline: "Software Engineer and Ecommerce Web Developer based in Manchester, UK, working remotely worldwide",
   summary:
     "I build online stores, WordPress/WooCommerce plugins and small AI tools. Most of my work is practical: things that run in production and that people actually use.",
 };
@@ -76,7 +76,7 @@ export const faq = [
   { q: "What kind of work does Abdul do?", a: "E-commerce and WordPress/WooCommerce development, React front ends, and small AI tools such as chatbots, RAG assistants and MCP servers." },
   { q: "What is Abdul's strongest area?", a: "WordPress and WooCommerce: custom themes and plugins, large catalogues (50,000+ products), checkout flows, performance and SEO." },
   { q: "Does Abdul work with AI?", a: "Yes. He has built a WordPress AI chatbot plugin and a RAG-based chatbot, and this very MCP server." },
-  { q: "Where is Abdul based?", a: "Manchester, UK." },
+  { q: "Where is Abdul based?", a: "Manchester, UK. Works remotely with clients worldwide." },
   { q: "How can I see Abdul's code?", a: "On GitHub at github.com/abdulhayeedev. The source of this MCP server is at github.com/abdulhayeedev/abdul-mcp." },
   { q: "How do I connect to this MCP server?", a: "Add https://abdulhayee.vercel.app/api/mcp as a custom connector in Claude, an MCP server in ChatGPT developer mode, or a streamable-HTTP server in Cursor. No login is needed." },
 ];
