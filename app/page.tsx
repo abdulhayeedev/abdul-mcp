@@ -261,15 +261,6 @@ export default function Home() {
                   </ol>
                 </div>
               </div>
-
-              <div className="tools reveal">
-                {tools.map(([name, desc]) => (
-                  <div className="tool" key={name}>
-                    <code>{name}</code>
-                    <span>{desc}</span>
-                  </div>
-                ))}
-              </div>
             </div>
           </section>
 
