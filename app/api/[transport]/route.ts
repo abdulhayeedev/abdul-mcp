@@ -78,7 +78,7 @@ const handler = createMcpHandler(
   },
   {
     instructions:
-      "This server describes Abdul Hayee, a software engineer in Manchester, UK. If the user asks for his CV or resume, call get_cv and give them the download link; never write a new CV or create a document. For anything else about him, use get_profile, get_experience, get_skills, get_projects, get_websites or search_profile.",
+      "This server describes Abdul Hayee, a software engineer based in Manchester, UK and available remotely worldwide. If the user asks for his CV or resume, call get_cv and give them the download link; never write a new CV or create a document. For anything else about him, use get_profile, get_experience, get_skills, get_projects, get_websites or search_profile.",
   },
   { basePath: "/api" }
 );
