@@ -185,7 +185,7 @@ footer .inner{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px
 .herovid{filter:grayscale(1) sepia(.45) hue-rotate(92deg) saturate(1.5) brightness(.6) contrast(1.2)!important;object-position:50% 18%}
 /* sacrificial */
 /* bigger rotator */
-.hero .tag{font-size:clamp(18px,2.3vw,28px);letter-spacing:.1em;line-height:1.5;margin:22px 0 18px}
+.hero .tag{font-size:clamp(14px,1.5vw,19px);letter-spacing:.1em;line-height:1.5;margin:22px 0 18px}
 .hero .tag .rot{min-height:1.5em}
 /* mobile hero: show video */
 @media(max-width:760px){.herovid{filter:grayscale(1) sepia(.45) hue-rotate(92deg) saturate(1.5) brightness(.95) contrast(1.1)!important;object-position:50% 20%}.heroshade{background:linear-gradient(180deg,rgba(0,0,0,.2) 0%,rgba(0,0,0,.34) 45%,rgba(0,0,0,.6) 75%,rgba(0,0,0,.93) 100%)}.hero .inner .hello,.hero .inner h1,.hero .inner .tag,.hero .inner .lead{text-shadow:0 2px 16px rgba(0,0,0,.9),0 0 4px rgba(0,0,0,.6)}}
