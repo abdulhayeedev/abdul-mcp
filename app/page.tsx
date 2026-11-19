@@ -10,6 +10,13 @@ import { websites } from "./data";
 const SITE = "https://abdulhayee.vercel.app";
 const MCP_URL = SITE + "/api/mcp";
 
+const services = [
+  { n: "01", name: "E-commerce stores", text: "Shopify and WooCommerce stores, from theme and checkout to catalogues with tens of thousands of products.", tags: ["Shopify", "WooCommerce", "PHP"] },
+  { n: "02", name: "WordPress themes & plugins", text: "Custom themes and plugins built around how your business actually works, not an off-the-shelf template.", tags: ["WordPress", "PHP", "Elementor"] },
+  { n: "03", name: "AI agents & chatbots", text: "Chatbots that answer from your own content, and MCP servers so AI assistants can use your data.", tags: ["RAG", "LLM", "MCP"] },
+  { n: "04", name: "Web apps & internal tools", text: "React front ends, POS systems and tracking tools with a Supabase back end.", tags: ["React", "TypeScript", "Supabase"] },
+];
+
 const stats = [
   ["50,000+", "products in one WooCommerce store"],
   ["6+", "years building for the web"],
@@ -133,6 +140,41 @@ export default function Home() {
                 <a className="btn solid" href="#work">See my work</a>
                 <a className="btn" href="#mcp">Ask my profile</a>
                 <a className="badge" href="#mcp"><span className="dot" />AGENT-READY / connect via MCP</a>
+              </div>
+            </div>
+          </section>
+
+          <section className="s svc" id="services">
+            <div className="inner">
+              <div className="svc-top">
+                <div>
+                  <div className="eyebrow reveal">Services</div>
+                  <h2 className="reveal">What I can build for you.</h2>
+                </div>
+                <div className="svc-side reveal">
+                  <p>Fixed-scope or ongoing work, clear communication, no hand-holding. Every service below is something I&apos;ve shipped.</p>
+                  <div className="svc-chips">
+                    <span>Manchester · remote worldwide</span>
+                    <span>Open to freelance contracts</span>
+                  </div>
+                  <a className="btn solid" href="/contact">Get in touch &rarr;</a>
+                </div>
+              </div>
+              <div className="svc-grid">
+                {services.map((s) => (
+                  <a className="svc-card reveal" href="#work" key={s.n}>
+                    <span className="svc-n">{s.n}</span>
+                    <i className="svc-dot" aria-hidden="true" />
+                    <h3>{s.name}</h3>
+                    <p>{s.text}</p>
+                    <div className="svc-tags">
+                      {s.tags.map((t) => (
+                        <span key={t}>{t}</span>
+                      ))}
+                    </div>
+                    <span className="svc-link">See examples &rarr;</span>
+                  </a>
+                ))}
               </div>
             </div>
           </section>
