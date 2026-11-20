@@ -1,5 +1,6 @@
 "use client";
 import { useEffect, useState } from "react";
+// @ts-ignore -- react-dom types are not installed
 import { createPortal } from "react-dom";
 import { usePathname } from "next/navigation";
 
