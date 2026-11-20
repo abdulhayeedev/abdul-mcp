@@ -488,3 +488,17 @@ html,body{max-width:100%;overflow-x:clip}
 .header .inner .hsoc a:nth-child(n+3){display:none}
 .header .inner .logo{min-width:0;white-space:nowrap;font-size:clamp(15px,5.2vw,22px)}
 }
+
+/* mobile menu */
+.burger,.mmenu{display:none}
+@media(max-width:760px){
+.header .inner .hsoc a{width:32px;height:32px}
+.header .inner .hsoc{gap:0;margin-left:auto;margin-right:6px}
+.burger{display:grid;place-content:center;gap:5px;flex-shrink:0;width:36px;height:36px;border-radius:50%;border:1px solid var(--line2);background:transparent;cursor:pointer;padding:0}
+.burger span{display:block;width:14px;height:1.6px;background:var(--text);border-radius:2px;transition:transform .25s var(--ease)}
+.burger.on span:first-child{transform:translateY(3.3px) rotate(45deg)}
+.burger.on span:last-child{transform:translateY(-3.3px) rotate(-45deg)}
+.mmenu{display:flex;flex-direction:column;position:absolute;top:100%;left:0;right:0;background:rgba(0,0,0,.97);border-bottom:1px solid var(--line);padding:8px var(--gutter,24px) 16px}
+.mmenu a{font-family:var(--sans);font-size:20px;font-weight:500;color:var(--text);padding:14px 0;border-bottom:1px solid var(--line)}
+.mmenu a:last-child{border-bottom:0;color:var(--accent)}
+}
