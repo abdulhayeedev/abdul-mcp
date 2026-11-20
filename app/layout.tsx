@@ -1,4 +1,5 @@
 import "./globals.css";
+import MobileMenu from "./MobileMenu";
 
 export const metadata = {
   title: "Abdul Hayee | Software Engineer, Manchester UK / Remote Worldwide",
@@ -18,7 +19,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         />
         <script dangerouslySetInnerHTML={{ __html: "document.documentElement.className+=' js'" }} />
       </head>
-      <body>{children}</body>
+      <body>
+        {children}
+        <MobileMenu />
+      </body>
     </html>
   );
 }
