@@ -26,7 +26,7 @@ const stack = [
 
 const stats = [
   ["50,000+", "products in one WooCommerce store"],
-  ["6+", "years building for the web"],
+  ["6+", "years shipping software"],
   ["12", "live MCP tools you can call"],
   ["2", "computer science degrees"],
 ];
