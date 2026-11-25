@@ -345,7 +345,7 @@ export default function Home() {
 
         <footer>
           <div className="inner">
-            <span>Abdul Hayee / Manchester, UK / Remote worldwide</span>
+            <span>© 2026 Abdul Hayee / Manchester, UK / Remote worldwide</span>
             <span>Next.js / TypeScript / Three.js / Vercel</span>
           </div>
         </footer>
