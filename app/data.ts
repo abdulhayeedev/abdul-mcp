@@ -57,6 +57,7 @@ export const websites = [
   { name: "vofspace.com", url: "https://vofspace.com" },
   { name: "fundmydeductible.com", url: "https://fundmydeductible.com" },
   { name: "maderaresidential.com", url: "https://maderaresidential.com" },
+  { name: "lapptops.net", url: "https://lapptops.net" },
 ];
 
 export const currently = [
