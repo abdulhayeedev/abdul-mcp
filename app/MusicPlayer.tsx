@@ -52,6 +52,20 @@ export default function MusicPlayer() {
   return (
     <>
       <audio ref={audio} src="/music.mp3" loop preload="none" onError={() => setMissing(true)} />
+      {!missing && !on && (
+        <div className="musicring" aria-hidden="true">
+          <svg viewBox="0 0 100 100">
+            <defs>
+              <path id="musicpath" d="M50,50 m-37,0 a37,37 0 1,1 74,0 a37,37 0 1,1 -74,0" />
+            </defs>
+            <text>
+              <textPath href="#musicpath" textLength="230" lengthAdjust="spacing">
+                ENJOY SOME MUSIC • ENJOY SOME MUSIC •
+              </textPath>
+            </text>
+          </svg>
+        </div>
+      )}
       {!missing && (
         <button
           type="button"
@@ -68,11 +82,6 @@ export default function MusicPlayer() {
             {!on && <path d="M3 3l18 18" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />}
           </svg>
         </button>
-      )}
-      {!missing && !on && (
-        <span className="musichint" aria-hidden="true">
-          <span className="musicarrow">&larr;</span> Enjoy some music
-        </span>
       )}
     </>
   );
