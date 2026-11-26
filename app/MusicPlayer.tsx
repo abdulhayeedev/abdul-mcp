@@ -69,6 +69,11 @@ export default function MusicPlayer() {
           </svg>
         </button>
       )}
+      {!missing && !on && (
+        <span className="musichint" aria-hidden="true">
+          <span className="musicarrow">&larr;</span> Enjoy some music
+        </span>
+      )}
     </>
   );
 }
