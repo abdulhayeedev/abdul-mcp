@@ -75,19 +75,10 @@ export default function MusicPlayer() {
           aria-pressed={on}
           title={on ? "Pause music" : "Play music"}
         >
-          <svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-            <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5" fill="currentColor" />
-            {on ? (
-              <>
-                <path d="M15.54 8.46a5 5 0 0 1 0 7.07" />
-                <path d="M19.07 4.93a10 10 0 0 1 0 14.14" />
-              </>
-            ) : (
-              <>
-                <line x1="23" y1="9" x2="17" y2="15" />
-                <line x1="17" y1="9" x2="23" y2="15" />
-              </>
-            )}
+          <svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor">
+            <ellipse cx="8" cy="18" rx="3.6" ry="3" transform="rotate(-20 8 18)" />
+            <rect x="10.6" y="3" width="2.2" height="15" rx="1" />
+            <path d="M12.8 3 C14.5 6.2 19 6.6 19 11.5 C17.8 9.2 15.3 8.8 12.8 8.8 Z" />
           </svg>
         </button>
       )}
