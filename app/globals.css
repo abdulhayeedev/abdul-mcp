@@ -516,3 +516,10 @@ html,body{max-width:100%;overflow-x:clip}
 .musicarrow{color:var(--accent);font-size:16px;animation:musicnudge 1.4s ease-in-out infinite}
 @keyframes musicnudge{0%,100%{transform:translateX(0)}50%{transform:translateX(-4px)}}
 @media(prefers-reduced-motion:reduce){.musicarrow{animation:none}}
+
+/* music mobile: small and out of the way */
+@media(max-width:760px){
+.musichint{display:none}
+.music{width:36px;height:36px;left:12px;bottom:12px;opacity:.85}
+.music svg{width:17px;height:17px}
+}
