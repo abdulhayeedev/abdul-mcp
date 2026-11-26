@@ -58,6 +58,9 @@ export const websites = [
   { name: "fundmydeductible.com", url: "https://fundmydeductible.com" },
   { name: "maderaresidential.com", url: "https://maderaresidential.com" },
   { name: "lapptops.net", url: "https://lapptops.net" },
+  { name: "soapstones.com", url: "https://www.soapstones.com" },
+  { name: "shedsunlimited.net", url: "https://shedsunlimited.net" },
+  { name: "raumausstatter-dieckmann.de", url: "https://raumausstatter-dieckmann.de" },
 ];
 
 export const currently = [
