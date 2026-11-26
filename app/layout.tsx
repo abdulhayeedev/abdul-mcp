@@ -1,5 +1,6 @@
 import "./globals.css";
 import MobileMenu from "./MobileMenu";
+import MusicPlayer from "./MusicPlayer";
 
 export const metadata = {
   title: "Abdul Hayee | Software Engineer, Manchester UK / Remote Worldwide",
@@ -22,6 +23,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body>
         {children}
         <MobileMenu />
+        <MusicPlayer />
       </body>
     </html>
   );
